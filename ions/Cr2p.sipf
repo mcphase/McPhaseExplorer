@@ -1,0 +1,83 @@
+#!MODULE=ic1ion
+#<!--mcphase.sipf-->
+#***************************************************************
+# Single Ion Parameter File for Module ic1ion for
+# mcphas version 3.0
+# - program to calculate static magnetic properties
+# reference: M. Rotter JMMM 272-276 (2004) 481
+# mcdisp version 3.0
+# - program to calculate the dispersion of magnetic excitations
+# reference: M. Rotter et al. J. Appl. Phys. A74 (2002) 5751
+# mcdiff version 3.0
+# - program to calculate neutron and magnetic xray diffraction
+# reference: M. Rotter and A. Boothroyd PRB 79 (2009) 140405R
+#***************************************************************
+
+
+#-----------
+IONTYPE=Cr2+
+#-----------
+
+nof_electrons=4
+
+#Neutron magnetic form factor coefficients
+FFj0A= 1.2024 FFj0a=-0.0055 FFj0B= 0.4158 FFj0b=20.5475 FFj0C= 0.6032 FFj0c= 6.9560 FFj0D=-1.2218
+FFj2A= 2.6422 FFj2a=16.0598 FFj2B= 1.9198 FFj2b= 6.2531 FFj2C= 0.4446 FFj2c= 2.3715 FFj2D= 0.0020
+FFj4A=-0.8930 FFj4a=15.6641 FFj4B= 0.5590 FFj4b= 7.0333 FFj4C= 0.4093 FFj4c= 1.9237 FFj4D= 0.0081
+
+
+
+
+#-------------------------------------------------------
+# Neutron Scattering Length (10^-12 cm) (can be complex)
+#-------------------------------------------------------
+SCATTERINGLENGTHREAL=0.3635
+SCATTERINGLENGTHIMAG=0
+#  ... note: - if an occupancy other than 1.0 is needed, just reduce 
+#              the scattering length linear accordingly
+
+
+#---------------------------------------------------------
+# Radial Matrix Elements (morrison 1987 "Angular Momentum
+#           Theory Applied to Interactions in Solids" US )
+#---------------------------------------------------------
+#ion   <r^2> <24> in units of a0^2 a0=0.5292 Angstroem
+#Cr2p
+R2=1.7532418
+R4=6.8864411
+
+
+
+#-------------------------------------------------------
+conf=d4
+units=meV
+zeta=28.7643307460322
+F2=8019.29703729898
+F4=5358.3484749225
+
+
+
+
+#-------------------------------------------------------
+
+
+
+
+#-------------------------------------------------------
+# Trivalent Lanthanides, from Carnall et al. J. Chem. Phys. v90, pp3443, 1989. All values in cm^-1, obtained from RE3+:LaCl_3
+# Trivalent Actinides, from Carnall et al. J. Chem. Phys. v90, pp3443, 1989. All values in cm^-1, from An3+:LaCl_3 and An3+:LaF_3
+# pa4+, cm3+ gd3+ parameters from Sytsma et al., Phys. Rev. B, v52, pp12668, 1995, in cm^-1, obtained from An4+:LuPO_4
+# Tetravalent Actinides parameters from Poirot et al., Phys. Rev. B, v39, pp6388, 1989, in cm^-1, obtained from An4+:ZrSiO_4
+# All d-electron parameters from Appendix of AS Chakravarty, Introduction to Magnetic Properties of Solid, Wiley, 1980. Original work also cited
+# 3d ions parameters from JS Grifiths, The Theory of Transition Metal Ions, CUP, 1961 (A and B)  lambda from TM Dunn, Trans. Faraday Soc. v57, 1441 (1961)
+# lambda_experimental -[from M Blume and RE Watson, Proc. R. Soc. Lon. A v271, 565 (1963)]
+# 4d ions parameters from Richardson, Blackman and Ranschak, J. Chem. Phys. v58, 3010 (1973).
+#   xi from calculations of Blume, Freeman, Watson, Phys. Rev. v134, A320 (1964), or where not calculated from TM Dunn, Trans. Faraday Soc. v57, 1441 (1961)
+# 5d ions parameters from G Burns, J. Chem. Phys. v41, 1521 (1964) B,C only.
+
+
+
+
+#-------------------------------------------------------
+
+CHARGE=2

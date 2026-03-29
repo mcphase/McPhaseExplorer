@@ -1,0 +1,68 @@
+#!MODULE=ic1ion
+#<!--mcphase.sipf-->
+#***************************************************************
+# Single Ion Parameter File 
+# mcphas  - program to calculate static magnetic properties
+# reference: M. Rotter JMMM 272-276 (2004) 481
+# mcdisp  - program to calculate the dispersion of magnetic excitations
+# reference: M. Rotter et al. J. Appl. Phys. A74 (2002) 5751
+# mcdiff - program to calculate neutron and magnetic xray diffraction
+# reference: M. Rotter and A. Boothroyd PRB 79 (2009) 140405R
+#***************************************************************
+IONTYPE=O2+
+CHARGE=+2
+MAGNETIC=1
+nof_electrons=2
+
+# Lande factor gJ
+#----------------
+#GJ=
+
+# Radial integrals for point charge calculations
+#-------------------------------------------------------
+#<r^2> in units of a0^2 a0=0.5292 Angstroem
+R2=0.9050
+R4=1.594
+R6=4.621
+
+
+# Debye-Waller Factor: sqr(Intensity)~|sf|~EXP(-2 * DWF *s*s)=EXP (-W)
+#                      with s=sin(theta)/lambda=Q/4pi
+# relation to other notations: 2*DWF=Biso=8 pi^2 <u^2>
+# unit of DWF is [A^2]
+#-------------------------------------------------------
+DWF=0
+
+#Neutron magnetic form factor coefficients
+
+#-------------------------------------------------------
+# Neutron Scattering Length (10^-12 cm) (can be complex)
+#-------------------------------------------------------
+SCATTERINGLENGTHREAL=0.5803
+SCATTERINGLENGTHIMAG=0
+#  ... note: - if an occupancy other than 1.0 is needed, just reduce 
+#              the scattering length linear accordingly
+
+#-----------------------------------------------------------------------
+# Free-ion parameters for on-site spin-orbit and Coulomb interactions
+# from COWAN
+#-----------------------------------------------------------------------
+units=meV
+conf=p2
+# 1mev=8.066 cm-1
+# zeta=296.128 cm-1 =36.7131
+# F2=109914.798 cm-1 = 13627
+zeta=36.7131
+F2= 13627
+
+#------------------------------------------------------------------------------------------------------
+# radial wave function parameters R_Np,XIp(r)= r^(Np-1) . exp(-xi r) . (2 XIp)^(Np+0.5) / sqrt(2Np!)
+# the radial wave function is expanded as R(r)=sum_p C_p R_Np,XIp(r)
+# fitted values to COWAN program 2p2  calculation
+#------------------------------------------------------------------------------------------------------
+#
+N1=2 XI1=3.28264155031387  C1=0.762283619932647 
+N2=2 XI2=1.52018420688912  C2=0.363634335976281 
+N3=2 XI3=31.905545708459  C3=-0.000169239918357425 
+N4=2 XI4=12.6655163496778  C4=0.00645650447919083 
+

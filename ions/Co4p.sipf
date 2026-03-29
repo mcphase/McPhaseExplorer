@@ -1,0 +1,54 @@
+#!MODULE=ic1ion
+#<!--mcphase.sipf-->
+#***************************************************************
+# Single Ion Parameter File for Module ic1ion for
+# mcphas version 3.0
+# - program to calculate static magnetic properties
+# reference: M. Rotter JMMM 272-276 (2004) 481
+# mcdisp version 3.0
+# - program to calculate the dispersion of magnetic excitations
+# reference: M. Rotter et al. J. Appl. Phys. A74 (2002) 5751
+# mcdiff version 3.0
+# - program to calculate neutron and magnetic xray diffraction
+# reference: M. Rotter and A. Boothroyd PRB 79 (2009) 140405R
+#***************************************************************
+
+
+#-----------
+IONTYPE=Co4+
+#-----------
+#Neutron magnetic form factor coefficients
+FFj0A= 0.3515 FFj0a=10.7785 FFj0B= 0.6778 FFj0b= 4.2343 FFj0C=-0.0389 FFj0c= 0.2409 FFj0D= 0.0098
+FFj2A= 1.3110 FFj2a= 8.0252 FFj2B= 1.1551 FFj2b= 3.1792 FFj2C= 0.1608 FFj2c= 1.1301 FFj2D=-0.0011
+FFj4A=-0.4091 FFj4a=13.1937 FFj4B=-0.0194 FFj4b= 3.4169 FFj4C= 0.3534 FFj4c= 1.4214 FFj4D= 0.0112
+
+#---------------------------------------------------------
+# Radial Matrix Elements (e.g. Abragam Bleaney 1971 p 399)
+#---------------------------------------------------------
+#<r^2> in units of a0^2 a0=0.5292 Angstroem
+# from haverkort thesis 
+R2=0.936
+#<r^4> in units of a0^4 a0=0.5292 Angstroem
+# from haverkort thesis
+R4=1.798
+
+
+
+#-------------------------------------------------------
+# Neutron Scattering Length (10^-12 cm) (can be complex)
+#-------------------------------------------------------
+SCATTERINGLENGTHREAL=0.249
+SCATTERINGLENGTHIMAG=0
+#  ... note: - if an occupancy other than 1.0 is needed, just reduce 
+#              the scattering length linear accordingly
+
+
+CHARGE=4
+conf=d5
+nof_electrons=5
+units=meV
+# from haverkort thesis
+zeta=82
+F2=13638
+F4=8572
+#-------------------------------------------------------

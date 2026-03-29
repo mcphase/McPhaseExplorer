@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.mcphase.base
+OpenIDE-Module-Layer: org/mcphase/base/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/mcphase/base/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

@@ -1,0 +1,140 @@
+\documentclass[11pt]{article}
+
+\begin{document}
+
+\title{McPhase Explorer}
+\author{Till Hoffmann}
+\maketitle
+
+\section{Introduction}
+\emph{McPhase Explorer} is an IDE - like program based on the NetBeans platform (http://www.platform.netbeans.org/) designed to help users create, edit and view files associated with the \emph{McPhase} program package.
+
+Since the program is based on a well established platform, documentation to add and/or change the program's behaviour is readily available at http://www.platform.netbeans.org/kb/.
+
+\section{Architecture}
+The NetBeans platform uses a modular architecture. E.g. each file type support is capsuled in its own independent module which can be loaded in any NetBeans platform application. To get a quick overview of the architecture please visit http://platform.netbeans.org/tutorials/nbm-quick-start.html.
+
+\subsection{McPhaseBase}
+\emph{McPhaseBase} is a module containing basic implementations of commonly used classes to streamline the development process of file type support modules. It provides
+\begin{itemize}
+\item support for multiple editors being associated with one file such as a plain text representation and a UI based representation,
+\item a basic implementation of a plain text editor (\emph{SourceEditorBase}),
+\item a base class for visual editors (\emph{VisualEditorBase}) including support for getting and setting key-value type variables.
+\end{itemize}
+
+\subsection{Adding file type support}
+Adding editor support for a custom file type can be achieved easily by 
+\begin{enumerate}
+\item adding a new module to the \emph{McPhaseExplorer} application suite,
+\item choosing \emph{Module Development $\rightarrow$ File Type} in the new file wizard,
+\item letting the newly created \emph{DataObject} inherit from \emph{org.mcphase.DataObjectBase} and implementing its abstract methods.
+\end{enumerate}
+The only abstract method of \emph{org.mcphase.base.DataObjectBase} is \emph{DataEditorSupport createEditorSupport()} and returns an editor support for the file type. Custom editor supports can be provided (http://bits.netbeans.org/dev/javadoc/org-openide-loaders/org/openide/text/DataEditorSupport.html) or the helper class \emph{org.mcphase.base.EditorSupportBase} can be used as shown in the following sample implementation
+\begin{verbatim}
+[...]
+public DataEditorSupport createEditorSupport() {
+    //Create a new editor support associated with this data object
+    EditorSupportBase support = new EditorSupportBase(this);
+    //Create a view description
+    ViewBase visual = new ViewBase();
+    //Set its display name
+    visual.setDisplayName("some name"));
+    //Set its icon (extending Image)
+    visual.setIcon(someIcon));
+    //Set its editor (implementing MultiViewElement 
+    //often extending VisualEditorBase)
+    visual.setViewElement(someEditor);
+    //Create the view elements
+    MultiViewDescription[] desc = {new SourceView(support), visual};
+    //Add the view elements to the editor support
+    support.setViewDescriptions(desc);
+    //Set the default element
+    support.setDefaultViewDescription(desc[0]);
+    //return the editor support
+    return support;
+    }
+[...]
+\end{verbatim}
+For a full implementation see the sample implementation of mcphas.ini. All classes used above are documented in either of the following javadoc documentations
+\begin{description}
+\item[NetBeans API List (http://bits.netbeans.org/dev/javadoc/index.html)]
+DataEditorSupport, MultiViewDescription
+\item[McPhaseBase Documentation (provided with this document)]
+EditorSupportBase, SourceView, ViewBase, VisualEditorBase
+\end{description}
+
+\section{Current development status}
+Internal support for the following file types is provided
+\begin{description}
+\item[sipf]Single ion parameter file
+\item[ini]McPhase algorithm control file
+\item[jpg, jpeg, png, gif, bmp] Image files
+\item[ant] Ant build scripts
+\end{description}
+
+All other file types are opened with the native OS application.
+
+\section{McPhaseBase Documentation}
+
+\subsection{org.mcphase.base.DataObjectBase}
+The following is a brief summary of the most commonly used classes and their interfaces. A full documentation can be found in the javadoc provided with this document.
+\emph{org.mcphase.base.DataObjectBase} represents a file object and provides support for multiple editors being associated with it. 
+
+It has one abstract method, \emph{DataEditorSupport createEditorSupport()}, which should be overridden in derived classes to provide an editor support. The helper class \emph{org.mcphase.base.EditorSupportBase} may be helpful in doing so.
+
+\subsection{org.mcphase.base.EditorSupportBase}
+\emph{org.mcphase.base.EditorSupportBase} implements a basic editor support to be used with multiple editors.
+
+It requires a DataObject to be passed to its constructor and provides the following functionality
+\begin{description}
+\item[MultiViewDescription'' getViewDescriptions()]
+Gets the view descriptions representing the various editor associated with the editor support.
+\item[void setViewDescriptions(MultiViewDescription'' viewDescriptions)]
+Sets the view descriptions representing the various editor associated with the editor support.
+\item[MultiViewDescription getDefaultViewDescription()]
+Gets the view description representing the editor shown by default.
+\item[void setDefaultViewDescription(MultiViewDescription defaultViewDescription)]
+Sets the view description representing the editor shown by default.
+\end{description}
+
+\subsection{org.mcphase.base.SourceEditor}
+\emph{org.mcphase.base.SourceEditor} implements an editor providing access to a file using a plain text interface. Please see 'Rich Client Programming: Plugging into the NetBeans Platform' for a full description of the implementation.
+
+\subsection{org.mcphase.base.SourceView}
+\emph{org.mcphase.base.SourceView} implements a view description for a plain text editor.
+
+\subsection{org.mcphase.base.ViewBase}
+\emph{org.mcphase.base.ViewBase} implements a MultiViewDescription to streamline the development process.
+
+It provides the following functionality
+\begin{description}
+\item[MultiViewElement getViewElement()]
+Gets the element associated with the view (i.e. the editor).
+\item[void setViewElement(MultiViewElement viewElement)]
+Sets the element associated with the view (i.e. the editor).
+\item[String getDisplayName()]
+Gets the name displayed in the tab bar.
+\item[void setDisplayName(String displayName)]
+Sets the name displayed in the tab bar.
+\item[Image getIcon()]
+Gets the icon displayed next to the file name while the view is selected.
+\item[void setIcon(Image icon)]
+Sets the icon displayed next to the file name while the view is selected.
+\end{description}
+
+\subsection{org.mcphase.base.VisualEditorBase}
+\emph{org.mcphase.base.VisualEditorBase} implements a basic visual editor, which can be embedded in a multiple-editor environment. Components may be registered with key-value type variables such that they are kept synchronised.
+
+It provides the following functionality
+\begin{description}
+\item[void updateControls()]
+Updates the content of all registered controls.
+\item[void registerComponent(String variable, Component component)]
+Registers the specified component with the specified variable such that they are kept synchronised. Supported components are JCheckBox, JComboBox, JTextComponent.
+\item[String getVariable(String name)]
+Gets the value of the named variable or \emph{null} if it cannot be found.
+\item[void setVariable(String variable, String value)]
+Sets the value of the named variable or removes the variable if the value is \emph{null}.
+\end{description}
+
+\end{document}

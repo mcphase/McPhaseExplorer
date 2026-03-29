@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Other"/>
+        <folder name="Window">
+            <file name="org-netbeans-terminal-example-ShellTermAction.instance"/>
+            <file name="org-netbeans-terminal-example-CmdTermAction.instance"/>
+            <file name="org-netbeans-terminal-example-TermWindowAction.instance"/>
+            </folder>
+    </folder>
+
+    <folder name="Menu">
+<!--    <folder name="Terminals"/>  -->
+        <folder name="BuildProject">    <!-- aka Run -->
+            <file name="ShellTermAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-terminal-example-ShellTermAction.instance"/>
+                <attr name="position" intvalue="3"/>
+            </file>
+            <file name="CmdTermAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-terminal-example-CmdTermAction.instance"/>
+                <attr name="position" intvalue="5"/>
+            </file>
+            <file name="TermSeparator.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+            </file>
+        </folder>
+        <folder name="Window">
+<!--        <file name="ControlAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-terminal-example-control-ControlAction.instance"/>
+	    </file> -->
+            <file name="MuxableTerminalAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-terminal-example-topcomponent-MuxableTerminalAction.instance"/>
+            </file>
+            <folder name="Output">
+                <file name="TermWindowAction.shadow">
+                    <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-terminal-example-TermWindowAction.instance"/>
+                </file>
+            </folder>
+            <file name="TerminalAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-terminal-example-topcomponent-TerminalAction.instance"/>
+            </file>
+            </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+<!--        <file name="ControlTopComponent.settings" url="resources/ControlTopComponentSettings.xml"/>  -->
+            <file name="MuxableTerminalTopComponent.settings" url="resources/MuxableTerminalTopComponentSettings.xml"/>
+            <file name="TerminalTopComponent.settings" url="resources/TerminalTopComponentSettings.xml"/>
+        </folder>
+        <folder name="Modes">
+            <folder name="explorer">
+                <file name="ControlTopComponent.wstcref" url="resources/ControlTopComponentWstcref.xml"/>
+            </folder>
+            <folder name="output">
+                <file name="MuxableTerminalTopComponent.wstcref" url="resources/MuxableTerminalTopComponentWstcref.xml"/>
+                <file name="TerminalTopComponent.wstcref" url="resources/TerminalTopComponentWstcref.xml"/>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>

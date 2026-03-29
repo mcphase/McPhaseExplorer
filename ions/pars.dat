@@ -1,0 +1,135 @@
+   # Trivalent Lanthanides, from Carnall et al. J. Chem. Phys. v90, pp3443, 1989. All values in cm^-1, obtained from RE3+:LaCl_3
+   #                               F^2            F^4            F^6        spin-orbit              alpha      beta        gamma
+        ce3p                                               xi = 647.3  conf=f1  
+    pr3p  F2= 68878.  F4= 50347.  F6= 32901.  xi = 751.7  conf=f2   a0 = 16.23  a1 = -566.6  a2 = 1371.  
+    nd3p  F2= 73018.  F4= 52789.  F6= 35757.  xi = 885.3  conf=f3   a0 = 21.34  a1 = -593.0  a2 = 1445.  
+    pm3p  F2= 76400.  F4= 54900.  F6= 37700.  xi = 1025.  conf=f4   a0 = 20.50  a1 = -560.   a2 = 1475.  
+    sm3p  F2= 79805.  F4= 57175.  F6= 40250.  xi = 1176.  conf=f5   a0 = 20.16  a1 = -566.9  a2 = 1500.  
+    eu3p  F2= 83125.  F4= 59268.  F6= 42560.  xi = 1338.  conf=f6   a0 = 20.16  a1 = -566.9  a2 = 1500.  
+    gd3p  F2= 85669.  F4= 60825.  F6= 44776.  xi = 1508.  conf=f7   a0 = 18.92  a1 = -600.   a2 = 1575.  
+    tb3p  F2= 88995.  F4= 62919.  F6= 47252.  xi = 1707.  conf=f8   a0 = 18.40  a1 = -590.9  a2 = 1650.  
+    dy3p  F2= 91903.  F4= 64372.  F6= 49386.  xi = 1913.  conf=f9   a0 = 18.02  a1 = -633.4  a2 = 1790.  
+    ho3p  F2= 94564.  F4= 66397.  F6= 52022.  xi = 2145.  conf=f10  a0 = 17.15  a1 = -607.9  a2 = 1800.  
+    er3p  F2= 97483.  F4= 67904.  F6= 54010.  xi = 2376.  conf=f11  a0 = 17.79  a1 = -582.1  a2 = 1800.  
+    tm3p  F2= 100134. F4= 69613.  F6= 55975.  xi = 2636.  conf=f12  a0 = 17.26  a1 = -624.5  a2 = 1820.  
+    yb3p                                               xi = 2928.  conf=f13 
+   # Trivalent Actinides, from Carnall et al. J. Chem. Phys. v90, pp3443, 1989. All values in cm^-1, from An3+:LaCl_3 and An3+:LaF_3
+    u3p   F2= 39611.  F4= 32960.  F6= 23084.  xi = 1626.  conf=f3   a0 = 29.26  a1 = -824.6  a2 = 1820.  
+    np3p  F2= 45382.  F4= 37242.  F6= 25644.  xi = 1937.  conf=f4   a0 = 31.78  a1 = -728.0  a2 = 1820.  
+    pu3p  F2= 48679.  F4= 39333.  F6= 27647.  xi = 2242.  conf=f5   a0 = 30.00  a1 = -678.3  a2 = 1820.  
+    am3p  F2= 51900.  F4= 41600.  F6= 29400.  xi = 2564.  conf=f6   a0 = 26.71  a1 = -426.6  a2 = 1820.  
+    cm3p  F2= 55055.  F4= 43938.  F6= 32876.  xi = 2889.  conf=f7   a0 = 29.42  a1 = -362.9  a2 = 1820.  
+    bk3p  F2= 57697.  F4= 45969.  F6= 32876.  xi = 3210.  conf=f8   a0 = 29.56  a1 = -564.9  a2 = 1820.  
+    cf3p  F2= 60464.  F4= 48026.  F6= 34592.  xi = 3572.  conf=f9   a0 = 27.36  a1 = -587.5  a2 = 1820.  
+    es3p  F2= 63174.  F4= 50034.  F6= 36199.  xi = 3944.  conf=f10  a0 = 30.21  a1 = -761.0  a2 = 1820.  
+    fm3p  F2= 65850.  F4= 52044.  F6= 37756.  xi = 4326.  conf=f11  a0 = 30.    a1 = -600.   a2 = 1820.  
+    md3p  F2= 68454.  F4= 54048.  F6= 39283.  xi = 4715.  conf=f12  a0 = 30.    a1 = -600.   a2 = 1820.  
+    no3p                                               xi = 5144.  conf=f13 
+   # Trivalent parameters from Sytsma et al., Phys. Rev. B, v52, pp12668, 1995, in cm^-1, obtained from An4+:LuPO_4
+ # cm3p  F2= 54669.1 F4= 44759.8  F6= 33021.4  xi= 2867.7 conf=f7   a0 = 30.27  a1 = -981.6  a2 = 749.3  
+ # gd3p  F2= 84075.  F4= 61410.8  F6= 44425.9  xi= 1494.  conf=f7   a0 = 18.92  a1 = -600.   a2 = 1575.  
+   # Tetravalent Actinides, from Conway, J. Chem. Phys. v41, pp904, 1964. All values in cm^-1, using hydrogenic wavefunctions.
+   #                               F_2            F_4            F_6        spin-orbit
+    pa4p                                                xi= 1490.  conf=f1  
+   # Tetravalent Actinides parameters from Poirot et al., Phys. Rev. B, v39, pp6388, 1989, in cm^-1, obtained from An4+:ZrSiO_4
+   #                               F^2            F^4            F^6        spin-orbit              alpha      beta        gamma
+    u4p   F2= 44258.  F4= 40293.  F6= 31287.  xi = 1740.  conf=f2   a0 = 23.  
+    np4p  F2= 47949.  F4= 41455.  F6= 26528.  xi = 2088.  conf=f3   a0 = 39.2   a1 = -610.   a2 = 1200.  
+    pu4p  F2= 49394.  F4= 39495.  F6= 30684.  xi = 2366.  conf=f3   a0 = 32.3   a1 = -783.   a2 = 1200.  
+   # U4+:CsCdBr_3 and other parameters, from Karbowiak et al., Chemical Physics, v308, p135, 2005 (vier)
+ # u4p   F2= 45601.  F4= 38622.  F6= 28423.  xi = 1718.  conf=f2   a0 = 29.    a1 = -1440.  a2 = 1532.  
+ # u3p   F2= 36918.  F4= 32942.  F6= 19906.  xi = 1601.  conf=f3   a0 = 27.    a1 = -830.   a2 = 1093.  
+ # cm3p  F2= 53309.  F4= 45993.  F6= 31047.  xi = 2800.  conf=f7   a0 = 30.2   a1 = -947.   a2 = 910.   
+ # pr3p  F2= 67459.  F4= 49029.  F6= 32366.  xi = 741.07 conf=f2   a0 = 22.98  a1 = -682.98 a2 = 1422.  
+  
+   # All d-electron parameters from Appendix of AS Chakravarty, Introduction to Magnetic Properties of Solid, Wiley, 1980. Original work also cited
+   # 3d ions parameters from JS Grifiths, The Theory of Transition Metal Ions, CUP, 1961 (A and B)  lambda from TM Dunn, Trans. Faraday Soc. v57, 1441 (1961)
+   #   where 0 is shown, parameter not known... (where 0. is shown parameter is zero!) where theory_lamdba shows "-" parameter is actually theoretical...
+   #                                      lambda_experimental lambda_theory-[from M Blume and RE Watson, Proc. R. Soc. Lon. A v271, 565 (1963)]
+    sc2p  B = 0.     C = 0.      xi = 79.   /*xi=86. */ conf=d1  l=2  flg3d=1  flgBC=1  
+    ti    B = 560.   C = 1840.   xi = 0     /*xi=    */ conf=d4  l=2  flg3d=1  flgBC=1   #
+    tip   B = 682.   C = 2481.   xi = 0     /*xi=    */ conf=d3  l=2  flg3d=1  flgBC=1   #
+    ti2p  B = 718.   C = 2629.   xi = 60.   /*xi=61. */ conf=d2  l=2  flg3d=1  flgBC=1  
+    ti3p  B = 0.     C = 0.      xi = 154.  /*xi=159 */ conf=d1  l=2  flg3d=1  flgBC=1  
+    v     B = 578.   C = 2273.   xi = 0     /*xi=    */ conf=d5  l=2  flg3d=1  flgBC=1  
+    vp    B = 659.   C = 2417.   xi = 0     /*xi=    */ conf=d4  l=2  flg3d=1  flgBC=1  
+    v2p   B = 766.   C = 2855.   xi = 55.   /*xi=57. */ conf=d3  l=2  flg3d=1  flgBC=1  
+    v3p   B = 861.   C = 4165.   xi = 106.  /*xi=104 */ conf=d2  l=2  flg3d=1  flgBC=1  
+    v4p   B = 0.     C = 0.      xi = 248.  /*xi=255 */ conf=d1  l=2  flg3d=1  flgBC=1  
+    cr    B = 790.   C = 2520.   xi = 0     /*xi=    */ conf=d6  l=2  flg3d=1  flgBC=1   #
+    crp   B = 710.   C = 2790.   xi = 0     /*xi=    */ conf=d5  l=2  flg3d=1  flgBC=1   #
+    cr2p  B = 830.   C = 3430.   xi = 58.   /*xi=59. */ conf=d4  l=2  flg3d=1  flgBC=1  
+    cr3p  B = 1030.  C = 3850.   xi = 91.   /*xi=91. */ conf=d3  l=2  flg3d=1  flgBC=1  
+    cr4p  B = 1039.  C = 4238.   xi = 164.  /*xi=163 */ conf=d2  l=2  flg3d=1  flgBC=1  
+    mn    B = 720.   C = 3087.   xi = 0     /*xi=    */ conf=d7  l=2  flg3d=1  flgBC=1  
+    mnp   B = 873.   C = 3130.   xi = 64.   /*xi=64. */ conf=d6  l=2  flg3d=1  flgBC=1  
+    mn2p  B = 960.   C = 3325.   xi = 68.57 /*xi=68.57*/conf=d5  l=2  flg3d=1  flgBC=1  
+    mn3p  B = 1140.  C = 3675.   xi = 88.   /*xi=87. */ conf=d4  l=2  flg3d=1  flgBC=1  
+    mn4p  F2=87044 F4=54316  xi = 134.  /*xi=135 */ conf=d3  l=2  flg3d=1            # (Expt.) Uylings et al., J. Phys. B. 17 (1984) 4103
+    fe    B = 806.   C = 3506.   xi = 0     /*xi=    */ conf=d8  l=2  flg3d=1  flgBC=1   #
+    fep   B = 869.   C = 3638.   xi = 119.  /*xi=115 */ conf=d7  l=2  flg3d=1  flgBC=1  
+    fe2p  B = 1058.  C = 3091.   xi = 103.  /*xi=114 */ conf=d6  l=2  flg3d=1  flgBC=1  
+    fe3p  F2=97130 F4=60769  xi = 476.  /*xi=    */ conf=d5  l=2  flg3d=1            # Havercort Thesis 2p6 3d5
+    fe4p  B = 1144.  C = 4459.   xi = 129.  /*xi=125 */ conf=d4  l=2  flg3d=1  flgBC=1  
+    co    B = 798.   C = 4167.   xi = 0     /*xi=    */ conf=d9  l=2  flg3d=1  flgBC=1   #
+    cop   B = 878.   C = 3828.   xi = 228.  /*xi=228 */ conf=d8  l=2  flg3d=1  flgBC=1  
+    co2p  B = 1115.  C = 4366.   xi = 178.  /*xi=189 */ conf=d7  l=2  flg3d=1  flgBC=1  
+    co3p  B = 1065.  C = 5120.   xi = 128.6 /*xi=145 */ conf=d6  l=2  flg3d=1  flgBC=1   # Abragam Bleaney 1970 p 391 for B,C. xi from PRB 67 172401
+#  ni    B = 1025.  C = 4226.   xi = 0     /*xi=    */ conf=d10  l=2  flg3d=1  flgBC=1   #
+    nip   B = 1037.  C = 4314.   xi = 0     /*xi=    */ conf=d9  l=2  flg3d=1  flgBC=1   #
+    ni2p  B = 1084.  C = 4831.   xi = 324.  /*xi=343 */ conf=d8  l=2  flg3d=1  flgBC=1  
+    ni3p  B = 1184.  C = 5105.   xi = 272.  /*xi= -  */ conf=d7  l=2  flg3d=1  flgBC=1   # B,C, from fit to NIST data using Racah II, eqn 84
+    ni4p  F2=100185 F4=64787 xi = 197.  /*xi= -  */ conf=d6  l=2  flg3d=1            # (Expt.) Uylings et al., J. Phys. B. 17 (1984) 4103
+#  cup   B = 1216.  C = 4745.   xi = 0     /*xi=    */ conf=d10  l=2  flg3d=1  flgBC=1   #
+    cu2p  B = 1238.  C = 4659.   xi = 830.  /*xi=830 */ conf=d9  l=2  flg3d=1  flgBC=1  
+    cu3p  F2=111996 F4=69924 xi = 903.  /*xi= -  */ conf=d8  l=2  flg3d=1            # Thesis Havercort Koeln Cu 2p6 3d8
+    zn3p  F2=116868 F4=72923 xi = 1097. /*xi=    */ conf=d9  l=2  flg3d=1            # Havercort Thesis 2p6 3d9
+    
+   # 4d ions parameters from Richardson, Blackman and Ranschak, J. Chem. Phys. v58, 3010 (1973).
+   #   xi from calculations of Blume, Freeman, Watson, Phys. Rev. v134, A320 (1964), or where not calculated from TM Dunn, Trans. Faraday Soc. v57, 1441 (1961)
+    y2p   B = 0.     C = 0.      xi = 312.  /*xi=300 */ conf=d1  l=2  flgBC=1  
+    zr2p  B = 333.   C = 3.96*B  xi = 432.  /*xi=425 */ conf=d2  l=2  flgBC=1  
+    zr3p  B = 0.     C = 0.      xi = 507.  /*xi=500 */ conf=d1  l=2  flgBC=1  
+    nbp   B = 324.   C = 3.89*B  xi = 0     /*xi=    */ conf=d4  l=2  flgBC=1  
+    nb2p  B = 360.   C = 3.97*B  xi = 560.  /*xi=555 */ conf=d3  l=2  flgBC=1  
+    nb3p  B = 391.   C = 4.03*B  xi = 644.  /*xi=670 */ conf=d2  l=2  flgBC=1  
+    nb4p  B = 0.     C = 0.      xi = 750.  /*xi=    */ conf=d1  l=2  flgBC=1  
+    mop   B = 355.   C = 3.91*B  xi = 630.  /*xi=    */ conf=d5  l=2  flgBC=1  
+    mo2p  B = 387.   C = 3.98*B  xi = 717.  /*xi=695 */ conf=d4  l=2  flgBC=1  
+    mo3p  B = 416.   C = 4.03*B  xi = 812.  /*xi=800 */ conf=d3  l=2  flgBC=1  
+    mo4p  B = 440.   C = 4.08*B  xi = 950.  /*xi=    */ conf=d2  l=2  flgBC=1  
+    mo5p  B = 0.     C = 0.      xi =1030.  /*xi=    */ conf=d1  l=2  flgBC=1  
+    tc2p  B = 414.   C = 3.99*B  xi = 850.  /*xi=    */ conf=d5  l=2  flgBC=1  
+    tc3p  B = 440.   C = 4.03*B  xi = 990.  /*xi=    */ conf=d4  l=2  flgBC=1  
+    tc4p  B = 0      C = 0       xi =1150.  /*xi=    */ conf=d3  l=2  flgBC=1   #
+    ru2p  B = 436.   C = 3.99*B  xi =1077.  /*xi=1000*/ conf=d6  l=2  flgBC=1  
+    ru3p  B = 464.   C = 4.04*B  xi =1197.  /*xi=1180*/ conf=d5  l=2  flgBC=1  
+    ru4p  B = 400    C = 1270    xi =1350.  /*xi=    */ conf=d4  l=2  flgBC=1   #
+    rhp   B = 427.   C = 3.93*B  xi =0      /*xi=    */ conf=d8  l=2  flgBC=1   #
+    rh2p  B = 458.   C = 3.98*B  xi =1664.  /*xi=1640*/ conf=d7  l=2  flgBC=1  
+    rh3p  B = 484.   C = 4.03*B  xi =1416.  /*xi=1400*/ conf=d6  l=2  flgBC=1  
+    rh4p  B = 0      C = 0       xi =1570.  /*xi=    */ conf=d5  l=2  flgBC=1   #
+    pdp   B = 451.   C = 3.94*B  xi =0      /*xi=    */ conf=d9  l=2  flgBC=1   #
+    pd2p  B = 480.   C = 3.99*B  xi =1529.  /*xi=1600*/ conf=d8  l=2  flgBC=1  
+    pd3p  B = 506.   C = 4.03*B  xi =1529.  /*xi=1600*/ conf=d7  l=2  flgBC=1  
+    ag2p  B = 502.   C = 3.99*B  xi =1794.  /*xi=1840*/ conf=d9  l=2  flgBC=1  
+    ag3p  B = 528.   C = 4.03*B  xi =1940.  /*xi=1930*/ conf=d8  l=2  flgBC=1  
+   # 5d ions parameters from G Burns, J. Chem. Phys. v41, 1521 (1964) B,C only.
+   
+     std::cerr << "getfromionname(): Name of ion " << ionname << " not recognised.\n"  return  
+
+   if(flg3d) # 3d ion - "xi" is actually lambda parameter -> |lambda| = xi/2S
+   {
+      $S2 = ($n<=(2*$l+1)) ? $n : ((4*$l+2)-$n);     # Finds 2S (maximise S from Hund's Rules)
+      xi *= $S2; 
+   }
+   if(flgBC) # Need to convert B and C parameters to F^2, F^4 slater integrals
+   
+      # Eqn 77 of Racah II, A = F_0-49F_4 = F^0-F^4/9  B = F_2-5F_4 = (9F^2-5F^4)/441  C = 35F_4 = 5F^4/63 
+      F4= (63./5)*C  F2= (441.*B+5*F4)/9. 
+   
+
+   if(pars.e_units.find("cm")!=std::string::npos || pars.e_units.find("wave")!=std::string::npos) 
+   # converts from cm^-1 to meV
+    if(pars.e_units.find("meV")!=std::string::npos)  for(i=0 i<4 i++) F[i]/=MEV2CM  xi/=MEV2CM  for(i=0 i<3 i++) a[i]/=MEV2CM   
+   # converts from cm^-1 to K

@@ -1,0 +1,80 @@
+#!MODULE=ic1ion
+#<!--mcphase.sipf-->
+#***************************************************************
+# Single Ion Parameter File for Module ic1ion for
+# mcphas version 3.0
+# - program to calculate static magnetic properties
+# reference: M. Rotter JMMM 272-276 (2004) 481
+# mcdisp version 3.0
+# - program to calculate the dispersion of magnetic excitations
+# reference: M. Rotter et al. J. Appl. Phys. A74 (2002) 5751
+# mcdiff version 3.0
+# - program to calculate neutron and magnetic xray diffraction
+# reference: M. Rotter and A. Boothroyd PRB 79 (2009) 140405R
+#***************************************************************
+
+
+#-----------
+IONTYPE=Co2+
+#-----------
+
+#Neutron magnetic form factor coefficients
+FFj0A= 0.4332 FFj0a=14.3553 FFj0B= 0.5857 FFj0b= 4.6077 FFj0C=-0.0382 FFj0c= 0.1338 FFj0D= 0.0179
+FFj2A= 1.9049 FFj2a=11.6444 FFj2B= 1.3159 FFj2b= 4.3574 FFj2C= 0.3146 FFj2c= 1.6453 FFj2D= 0.0017
+FFj4A=-0.4759 FFj4a=14.0462 FFj4B= 0.2747 FFj4b= 3.7306 FFj4C= 0.2458 FFj4c= 1.2504 FFj4D= 0.0057
+
+#------------------------------------------------------------------------------------------------------
+# radial wave function parameters R_Np,XIp(r)= r^(Np-1) . exp(-xi r) . (2 XIp)^(Np+0.5) / sqrt(2Np!)
+# values tabulated in clementi & roetti Atomic data and nuclear data tables 14 (1974) 177-478
+# Co2+ is isoelectronic to Fe+ looking at page 422 of Clemente & Roetti
+# the 3D7 radial wave function is expanded as R(r)=sum_p C_p R_Np,XIp(r)
+#------------------------------------------------------------------------------------------------------
+N1=3 XI1=4.95296 C1=0.36301
+N2=3 XI2=12.2963 C2=0.02707
+N3=3 XI3=7.03565 C3=0.14777
+N4=3 XI4=2.74850 C4=0.49771
+N5=3 XI5=1.69027 C5=0.11388
+
+
+
+#-------------------------------------------------------
+# Neutron Scattering Length (10^-12 cm) (can be complex)
+#-------------------------------------------------------
+SCATTERINGLENGTHREAL=0.249
+SCATTERINGLENGTHIMAG=0
+#  ... note: - if an occupancy other than 1.0 is needed, just reduce 
+#              the scattering length linear accordingly
+
+#---------------------------------------------------------
+# Radial Matrix Elements (morrison 1987 "Angular Momentum
+#           Theory Applied to Interactions in Solids" US )
+#---------------------------------------------------------
+#ion   <r^2> <24> in units of a0^2 a0=0.5292 Angstroem
+#Co2p
+ R2=1.2586919
+R4=3.7600657
+
+
+
+
+#-------------------------------------------------------
+conf=d7
+units=meV
+zeta=66.2075543895741
+F2=10563.0805455591
+F4=6820.56835029494
+
+# Trivalent Lanthanides, from Carnall et al. J. Chem. Phys. v90, pp3443, 1989. All values in cm^-1, obtained from RE3+:LaCl_3
+# Trivalent Actinides, from Carnall et al. J. Chem. Phys. v90, pp3443, 1989. All values in cm^-1, from An3+:LaCl_3 and An3+:LaF_3
+# pa4+, cm3+ gd3+ parameters from Sytsma et al., Phys. Rev. B, v52, pp12668, 1995, in cm^-1, obtained from An4+:LuPO_4
+# Tetravalent Actinides parameters from Poirot et al., Phys. Rev. B, v39, pp6388, 1989, in cm^-1, obtained from An4+:ZrSiO_4
+# All d-electron parameters from Appendix of AS Chakravarty, Introduction to Magnetic Properties of Solid, Wiley, 1980. Original work also cited
+# 3d ions parameters from JS Grifiths, The Theory of Transition Metal Ions, CUP, 1961 (A and B)  lambda from TM Dunn, Trans. Faraday Soc. v57, 1441 (1961)
+# lambda_experimental -[from M Blume and RE Watson, Proc. R. Soc. Lon. A v271, 565 (1963)]
+# 4d ions parameters from Richardson, Blackman and Ranschak, J. Chem. Phys. v58, 3010 (1973).
+#   xi from calculations of Blume, Freeman, Watson, Phys. Rev. v134, A320 (1964), or where not calculated from TM Dunn, Trans. Faraday Soc. v57, 1441 (1961)
+# 5d ions parameters from G Burns, J. Chem. Phys. v41, 1521 (1964) B,C only.
+#-------------------------------------------------------
+
+CHARGE=2
+nof_electrons=7

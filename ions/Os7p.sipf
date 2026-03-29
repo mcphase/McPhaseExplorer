@@ -1,0 +1,70 @@
+#!MODULE=ic1ion
+#<!--mcphase.sipf-->
+#***************************************************************
+# Single Ion Parameter File for Module Kramer for
+# mcphas version 3.0
+# - program to calculate static magnetic properties
+# reference: M. Rotter JMMM 272-276 (2004) 481
+# mcdisp version 3.0
+# - program to calculate the dispersion of magnetic excitations
+# reference: M. Rotter et al. J. Appl. Phys. A74 (2002) 5751
+# mcdiff version 3.0
+# - program to calculate neutron and magnetic xray diffraction
+# reference: M. Rotter and A. Boothroyd PRB 79 (2009) 140405R
+#***************************************************************
+IONTYPE=Os7+
+CHARGE=1
+MAGNETIC=1
+
+#-------------------------------------------------------
+# Debye-Waller Factor: sqr(Intensity)~|sf|~EXP(-2 * DWF *s*s)=EXP (-W)
+#                      with s=sin(theta)/lambda=Q/4pi
+# relation to other notations: 2*DWF=Biso=8 pi^2 <u^2>
+# unit of DWF is [A^2]
+#-------------------------------------------------------
+DWF=0
+
+#-------------------------------------------------------
+# Neutron Scattering Length (10^-12 cm) (can be complex)
+#-------------------------------------------------------
+SCATTERINGLENGTHREAL=1.07
+SCATTERINGLENGTHIMAG=0
+#  ... note: - if an occupancy other than 1.0 is needed, just reduce 
+#              the scattering length linear accordingly
+
+
+#---------------------------------------------------------
+# Radial Matrix Elements (e.g. Abragam Bleaney 1971 p 399)
+#---------------------------------------------------------
+#<r^2> in units of a0^2 a0=0.5292 Angstroem
+R2=9.082E-01
+#<r^4> in units of a0^4 a0=0.5292 Angstroem
+R4=1.137E+00
+#<r^6> in units of a0^4 a0=0.5292 Angstroem
+R6=1.797E+00
+
+# number of electrons 
+nof_electrons=1
+units=meV
+# configuration
+conf=d1
+# Slater integrals for e-e Exchange
+# F0 F2 F4 given in out36 output file in 1/cm (1mev=8.066 cm-1) 
+# F0 225975.437 = 
+# F2 120561.012 = 
+
+# spin orbit interaction parameter
+# Blume Watson zeta = 17280.785 CM-1 = 146 meV
+zeta=2142
+
+#------------------------------------------------------------------------------------------------------
+# radial wave function parameters R_Np,XIp(r)= r^(Np-1) . exp(-xi r) . (2 XIp)^(Np+0.5) / sqrt(2Np!)
+# the radial wave function is expanded as R(r)=sum_p C_p R_Np,XIp(r)
+# fitted values to COWAN program 4d5  calculation
+#------------------------------------------------------------------------------------------------------
+#
+N1=4 XI1=5.36026389440415  C1=1.7895266958849 
+N2=4 XI2=8.64244060165168  C2=-1.1342810952073 
+N3=4 XI3=37.5161897799269  C3=0.200629669556727 
+N4=4 XI4=0.397811454328829  C4=0.22124759161108 
+

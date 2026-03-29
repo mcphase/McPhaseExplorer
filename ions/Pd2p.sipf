@@ -1,0 +1,56 @@
+
+#---------------------------------------------------------
+# Radial Matrix Elements (morrison 1987 "Angular Momentum
+#           Theory Applied to Interactions in Solids" US )
+#---------------------------------------------------------
+#ion   <r^2> <24> in units of a0^2 a0=0.5292 Angstroem
+#Pd2p
+ R2=2.1585228
+R4=8.5988074
+#-------------------------------------------------------
+# Neutron Scattering Length (10^-12 cm) (can be complex)
+#-------------------------------------------------------
+SCATTERINGLENGTHREAL=0.591
+SCATTERINGLENGTHIMAG=0
+#  ... note: - if an occupancy other than 1.0 is needed, just reduce 
+#              the scattering length linear accordingly
+
+
+
+
+
+#-------------------------------------------------------
+conf=d8
+units=meV
+zeta=189.571817718462
+F2=2919.57089182937
+F4=6.23318087899148
+
+
+
+
+#-------------------------------------------------------
+
+
+
+
+#-------------------------------------------------------
+# Trivalent Lanthanides, from Carnall et al. J. Chem. Phys. v90, pp3443, 1989. All values in cm^-1, obtained from RE3+:LaCl_3
+# Trivalent Actinides, from Carnall et al. J. Chem. Phys. v90, pp3443, 1989. All values in cm^-1, from An3+:LaCl_3 and An3+:LaF_3
+# pa4+, cm3+ gd3+ parameters from Sytsma et al., Phys. Rev. B, v52, pp12668, 1995, in cm^-1, obtained from An4+:LuPO_4
+# Tetravalent Actinides parameters from Poirot et al., Phys. Rev. B, v39, pp6388, 1989, in cm^-1, obtained from An4+:ZrSiO_4
+# All d-electron parameters from Appendix of AS Chakravarty, Introduction to Magnetic Properties of Solid, Wiley, 1980. Original work also cited
+# 3d ions parameters from JS Grifiths, The Theory of Transition Metal Ions, CUP, 1961 (A and B)  lambda from TM Dunn, Trans. Faraday Soc. v57, 1441 (1961)
+# lambda_experimental -[from M Blume and RE Watson, Proc. R. Soc. Lon. A v271, 565 (1963)]
+# 4d ions parameters from Richardson, Blackman and Ranschak, J. Chem. Phys. v58, 3010 (1973).
+#   xi from calculations of Blume, Freeman, Watson, Phys. Rev. v134, A320 (1964), or where not calculated from TM Dunn, Trans. Faraday Soc. v57, 1441 (1961)
+# 5d ions parameters from G Burns, J. Chem. Phys. v41, 1521 (1964) B,C only.
+
+
+
+
+#-------------------------------------------------------
+
+IONTYPE=Pd2+
+CHARGE=2
+nof_electrons=8

@@ -1,0 +1,79 @@
+#Neutron magnetic form factor coefficients
+FFj0A= 0.3840 FFj0a=16.6793 FFj0B= 3.1049 FFj0b= 5.4210 FFj0C=-2.5148 FFj0c= 4.5512 FFj0D= 0.0263
+FFj2A= 2.0885 FFj2a=12.8712 FFj2B= 2.5961 FFj2b= 5.1896 FFj2C=-0.1465 FFj2c= 0.0393 FFj2D= 0.1343
+FFj4A=-0.7014 FFj4a=16.3687 FFj4B=-0.1162 FFj4b= 6.6971 FFj4C= 0.7778 FFj4c= 2.4502 FFj4D= 0.0000
+FFj6A=-0.0364 FFj6a= 9.5721 FFj6B=-0.3181 FFj6b= 4.3424 FFj6C= 0.3210 FFj6c= 1.5233 FFj6D= 0.0041
+
+
+
+
+#-------------------------------------------------------
+# Neutron Scattering Length (10^-12 cm) (can be complex)
+#-------------------------------------------------------
+SCATTERINGLENGTHREAL=0
+SCATTERINGLENGTHIMAG=0
+#  ... note: - if an occupancy other than 1.0 is needed, just reduce 
+#              the scattering length linear accordingly
+
+
+
+
+
+
+#-------------------------------------------------------
+conf=f5
+units=meV
+#zeta=277.972541088811
+# from COWAN
+zeta=307.92
+#F2=6035.42610511251
+#F4=4876.66991911071
+#F6=3427.79074196359
+# from COWAN
+F2=9696.1
+F4=6314.0
+F6=4626.5
+
+
+
+#-------------------------------------------------------
+
+
+
+
+#-------------------------------------------------------
+
+
+
+
+#-------------------------------------------------------
+
+IONTYPE=Pu3+
+CHARGE=3
+nof_electrons=5
+MAGNETIC=1
+DWF=0
+
+#---------------------------------------------------------
+# Radial Matrix Elements from output Pu3plus.txt.out36 (section after the radial 5F wave function)
+# (R+2) (=<r^2>) ... in a0^2 units_ a0=0.5292 Angstroem  ibidem R+4 and R+6 ...
+#---------------------------------------------------------
+#<r^2> in units of a0^2 a0=0.5292 Angstroem
+R2=1.952E+00
+#<r^4> in units of a0^4 a0=0.5292 Angstroem
+R4=7.514
+#<r^6> in units of a0^6 a0=0.5292 Angstroem
+R6=5.210E+01
+
+
+#------------------------------------------------------------------------------------------------------
+# radial wave function parameters R_Np,XIp(r)= r^(Np-1) . exp(-xi r) . (2 XIp)^(Np+0.5) / sqrt(2Np!)
+# the radial wave function is expanded as R(r)=sum_p C_p R_Np,XIp(r)
+# fitted values to COWAN program 4d4  calculation
+#------------------------------------------------------------------------------------------------------
+#
+
+N1=4 XI1=3.80340582389465 C1=-0.994691986694916
+N2=4 XI2=0.963771501547706 C2=-0.0529449675794641
+N3=4 XI3=31.8695898754917 C3=0.015902912438884
+N4=4 XI4=15.6319777713744 C4=0.245401984614236

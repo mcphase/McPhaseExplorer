@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.mcphase.par
+OpenIDE-Module-Layer: org/mcphase/par/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/mcphase/par/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

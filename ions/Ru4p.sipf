@@ -1,0 +1,65 @@
+#!MODULE=ic1ion
+#<!--mcphase.sipf-->
+#***************************************************************
+# Single Ion Parameter File for Module Kramer for
+# mcphas version 3.0
+# - program to calculate static magnetic properties
+# reference: M. Rotter JMMM 272-276 (2004) 481
+# mcdisp version 3.0
+# - program to calculate the dispersion of magnetic excitations
+# reference: M. Rotter et al. J. Appl. Phys. A74 (2002) 5751
+# mcdiff version 3.0
+# - program to calculate neutron and magnetic xray diffraction
+# reference: M. Rotter and A. Boothroyd PRB 79 (2009) 140405R
+#***************************************************************
+CHARGE=4
+MAGNETIC=1
+
+#-------------------------------------------------------
+# Debye-Waller Factor: sqr(Intensity)~|sf|~EXP(-2 * DWF *s*s)=EXP (-W)
+#                      with s=sin(theta)/lambda=Q/4pi
+# relation to other notations: 2*DWF=Biso=8 pi^2 <u^2>
+# unit of DWF is [A^2]
+#-------------------------------------------------------
+DWF=0
+
+
+
+
+
+#-------------------------------------------------------
+# Neutron Scattering Length (10^-12 cm) (can be complex)
+#-------------------------------------------------------
+SCATTERINGLENGTHREAL=0.703
+SCATTERINGLENGTHIMAG=0
+#  ... note: - if an occupancy other than 1.0 is needed, just reduce 
+#              the scattering length linear accordingly
+
+
+IONTYPE=Ru4+
+# parameters from COWAN for free ion
+R2=2.176
+R4=7.891
+nof_electrons=4
+units=meV
+conf=d4
+F2=9210
+F4=6093
+zeta=161
+
+#------------------------------------------------------------------------------------------------------
+# radial wave function parameters R_Np,XIp(r)= r^(Np-1) . exp(-xi r) . (2 XIp)^(Np+0.5) / sqrt(2Np!)
+# the radial wave function is expanded as R(r)=sum_p C_p R_Np,XIp(r)
+# fitted values to COWAN program 4d4  calculation
+#------------------------------------------------------------------------------------------------------
+#
+
+
+N1=4 XI1=3.33050487879128  C1=-1.03417688569008 
+N2=4 XI2=0.838396954520385  C2=0.272796287539396 
+N3=4 XI3=31.8681068040986  C3=0.0380738653447544 
+N4=4 XI4=13.3504174121573  C4=0.252127005307005 
+
+
+
+

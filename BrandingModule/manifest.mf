@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.mcphase.branding
+OpenIDE-Module-Layer: org/mcphase/branding/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/mcphase/branding/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
+
+

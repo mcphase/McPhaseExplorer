@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Actions">
+<!--    <folder name="Other">
+            <file name="org-netbeans-nativeexecution-terminal-actions-NativeExecutionTestAction.instance">
+                <attr name="delegate" newvalue="org.netbeans.nativeexecution.terminal.actions.NativeExecutionTestAction"/>
+                <attr name="displayName" bundlevalue="org.netbeans.nativeexecution.terminal.actions.Bundle#CTL_NativeExecutionTestAction"/>
+                <attr name="instanceCreate" methodvalue="org.openide.awt.Actions.alwaysEnabled"/>
+                <attr name="noIconInMenu" boolvalue="false"/>
+            </file>
+        </folder>  -->
+        <folder name="Terminal">
+            <file name="org-netbeans-nativeexecution-terminal-actions-ActivateTermWindow.instance">
+                <attr name="delegate" newvalue="org.netbeans.nativeexecution.terminal.actions.ActivateTermWindow"/>
+                <attr name="displayName" bundlevalue="org.netbeans.nativeexecution.terminal.actions.Bundle#CTL_ActivateTermWindow"/>
+                <attr name="iconBase" stringvalue="org/netbeans/nativeexecution/terminal/actions/termicon.png"/>
+                <attr name="instanceCreate" methodvalue="org.openide.awt.Actions.alwaysEnabled"/>
+                <attr name="noIconInMenu" boolvalue="false"/>
+            </file>
+            <file name="org-netbeans-nativeexecution-terminal-actions-termBut.instance">
+                <attr name="delegate" newvalue="org.netbeans.nativeexecution.terminal.actions.termBut"/>
+                <attr name="displayName" bundlevalue="org.netbeans.nativeexecution.terminal.actions.Bundle#CTL_termBut"/>
+                <attr name="iconBase" stringvalue="org/netbeans/nativeexecution/terminal/actions/termicon.png"/>
+                <attr name="instanceCreate" methodvalue="org.openide.awt.Actions.alwaysEnabled"/>
+                <attr name="noIconInMenu" boolvalue="false"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Menu">
+<!--    <folder name="Terminals">
+            <file name="org-netbeans-nativeexecution-terminal-actions-NativeExecutionTestAction-separatorBefore.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                <attr name="position" intvalue="352"/>
+            </file>
+            <file name="org-netbeans-nativeexecution-terminal-actions-NativeExecutionTestAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Other/org-netbeans-nativeexecution-terminal-actions-NativeExecutionTestAction.instance"/>
+                <attr name="position" intvalue="402"/>
+            </file>
+        </folder> -->
+        <folder name="File">
+            <file name="org-netbeans-nativeexecution-terminal-actions-termBut.shadow">
+                <attr name="originalFile" stringvalue="Actions/Terminal/org-netbeans-nativeexecution-terminal-actions-termBut.instance"/>
+                <attr name="position" intvalue="300"/>
+            </file>
+        </folder>
+        <folder name="Window">
+            <file name="org-netbeans-nativeexecution-terminal-actions-ActivateTermWindow.shadow">
+                <attr name="originalFile" stringvalue="Actions/Terminal/org-netbeans-nativeexecution-terminal-actions-ActivateTermWindow.instance"/>
+                <attr name="position" intvalue="450"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Toolbars">
+        <folder name="File">
+            <file name="org-netbeans-nativeexecution-terminal-actions-termBut.shadow">
+                <attr name="originalFile" stringvalue="Actions/Terminal/org-netbeans-nativeexecution-terminal-actions-termBut.instance"/>
+                <attr name="position" intvalue="500"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

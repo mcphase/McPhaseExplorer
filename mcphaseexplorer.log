@@ -1,0 +1,148 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2009.9.7)  16 SEP 2009 13:27
+entering extended mode
+ %&-line parsing enabled.
+**mcphaseexplorer.tex
+(./mcphaseexplorer.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, basque, danish, dutch, finnish, french, german, ngerman, hungarian,
+ italian, bokmal, nynorsk, polish, portuguese, spanish, swedish, ukenglish, loa
+ded.
+(/usr/local/texlive/2008basic/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/local/texlive/2008basic/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(./mcphaseexplorer.aux)
+\openout1 = `mcphaseexplorer.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 7.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
+
+(/usr/local/texlive/2008basic/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+ [1
+
+{/usr/local/texlive/2008basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 29.
+
+Overfull \hbox (38.56525pt too wide) in paragraph at lines 30--31
+[]\OT1/cmr/m/n/10.95 letting the newly cre-ated \OT1/cmr/m/it/10.95 DataOb-ject
+ \OT1/cmr/m/n/10.95 in-herit from \OT1/cmr/m/it/10.95 org.mcphase.DataObjectBas
+e
+ []
+
+
+Overfull \hbox (66.49294pt too wide) in paragraph at lines 32--33
+\OT1/cmr/m/n/10.95 type. Cus-tom ed-i-tor sup-ports can be pro-vided (http://bi
+ts.netbeans.org/dev/javadoc/org-
+ []
+
+
+Overfull \hbox (19.41339pt too wide) in paragraph at lines 57--57
+[]    \OT1/cmtt/m/n/10.95 //Create a new editor support associated with this da
+ta object[] 
+ []
+
+
+Overfull \hbox (30.91077pt too wide) in paragraph at lines 57--57
+[]    \OT1/cmtt/m/n/10.95 MultiViewDescription[] desc = {new SourceView(support
+), visual};[] 
+ []
+
+[2]
+Overfull \hbox (36.72806pt too wide) in paragraph at lines 61--62
+[]
+ []
+
+
+Overfull \hbox (78.2382pt too wide) in paragraph at lines 63--64
+[]\OT1/cmr/m/n/10.95 EditorSupportBase,
+ []
+
+
+Overfull \hbox (4.66852pt too wide) in paragraph at lines 91--92
+[]\OT1/cmr/m/n/10.95 Gets the view de-scrip-
+ []
+
+[3]
+Overfull \hbox (20.61812pt too wide) in paragraph at lines 93--94
+[]
+ []
+
+
+Overfull \hbox (85.8736pt too wide) in paragraph at lines 97--98
+[]
+ []
+
+
+Overfull \hbox (7.30292pt too wide) in paragraph at lines 112--113
+[]\OT1/cmr/m/n/10.95 Gets the el-e-ment as-so-ci-ated with
+ []
+
+
+Overfull \hbox (1.22034pt too wide) in paragraph at lines 114--115
+[]\OT1/cmr/m/n/10.95 Sets the el-
+ []
+
+[4]
+Overfull \hbox (5.23485pt too wide) in paragraph at lines 133--134
+[]
+ []
+
+[5] (./mcphaseexplorer.aux) ) 
+Here is how much of TeX's memory you used:
+ 255 strings out of 494733
+ 3004 string characters out of 1170939
+ 50473 words of memory out of 3000000
+ 3541 multiletter control sequences out of 10000+50000
+ 9325 words of font info for 33 fonts, out of 3000000 for 5000
+ 188 hyphenation exceptions out of 8191
+ 21i,6n,19p,466b,187s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2008basic/texmf-dist/fonts/typ
+e1/bluesky/cm/cmbx10.pfb></usr/local/texlive/2008basic/texmf-dist/fonts/type1/b
+luesky/cm/cmbx12.pfb></usr/local/texlive/2008basic/texmf-dist/fonts/type1/blues
+ky/cm/cmr10.pfb></usr/local/texlive/2008basic/texmf-dist/fonts/type1/bluesky/cm
+/cmr12.pfb></usr/local/texlive/2008basic/texmf-dist/fonts/type1/bluesky/cm/cmr1
+7.pfb></usr/local/texlive/2008basic/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pf
+b></usr/local/texlive/2008basic/texmf-dist/fonts/type1/bluesky/cm/cmti10.pfb></
+usr/local/texlive/2008basic/texmf-dist/fonts/type1/bluesky/cm/cmtt10.pfb>
+Output written on mcphaseexplorer.pdf (5 pages, 74019 bytes).
+PDF statistics:
+ 50 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

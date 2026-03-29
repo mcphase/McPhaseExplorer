@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.mcphase.sipf
+OpenIDE-Module-Layer: org/mcphase/sipf/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/mcphase/sipf/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

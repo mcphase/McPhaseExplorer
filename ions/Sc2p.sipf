@@ -1,0 +1,53 @@
+#Neutron magnetic form factor coefficients
+FFj0A= 0.5048 FFj0a=31.4035 FFj0B= 0.5186 FFj0b=10.9897 FFj0C=-0.0241 FFj0c= 1.1831 FFj0D= 0.0000
+FFj2A= 4.3683 FFj2a=28.6544 FFj2B= 3.7231 FFj2b=10.8233 FFj2C= 0.6074 FFj2c= 3.6678 FFj2D= 0.0014
+FFj4A=-1.6684 FFj4a=15.6475 FFj4B= 1.7742 FFj4b= 9.0624 FFj4C= 0.4075 FFj4c= 2.4116 FFj4D= 0.0042
+
+
+
+
+#-------------------------------------------------------
+# Neutron Scattering Length (10^-12 cm) (can be complex)
+#-------------------------------------------------------
+SCATTERINGLENGTHREAL=1.229
+SCATTERINGLENGTHIMAG=0
+#  ... note: - if an occupancy other than 1.0 is needed, just reduce 
+#              the scattering length linear accordingly
+
+
+
+
+
+#-------------------------------------------------------
+conf=d1
+units=meV
+zeta=9.79475055576097
+
+
+
+
+#-------------------------------------------------------
+
+
+
+
+#-------------------------------------------------------
+# Trivalent Lanthanides, from Carnall et al. J. Chem. Phys. v90, pp3443, 1989. All values in cm^-1, obtained from RE3+:LaCl_3
+# Trivalent Actinides, from Carnall et al. J. Chem. Phys. v90, pp3443, 1989. All values in cm^-1, from An3+:LaCl_3 and An3+:LaF_3
+# pa4+, cm3+ gd3+ parameters from Sytsma et al., Phys. Rev. B, v52, pp12668, 1995, in cm^-1, obtained from An4+:LuPO_4
+# Tetravalent Actinides parameters from Poirot et al., Phys. Rev. B, v39, pp6388, 1989, in cm^-1, obtained from An4+:ZrSiO_4
+# All d-electron parameters from Appendix of AS Chakravarty, Introduction to Magnetic Properties of Solid, Wiley, 1980. Original work also cited
+# 3d ions parameters from JS Grifiths, The Theory of Transition Metal Ions, CUP, 1961 (A and B)  lambda from TM Dunn, Trans. Faraday Soc. v57, 1441 (1961)
+# lambda_experimental -[from M Blume and RE Watson, Proc. R. Soc. Lon. A v271, 565 (1963)]
+# 4d ions parameters from Richardson, Blackman and Ranschak, J. Chem. Phys. v58, 3010 (1973).
+#   xi from calculations of Blume, Freeman, Watson, Phys. Rev. v134, A320 (1964), or where not calculated from TM Dunn, Trans. Faraday Soc. v57, 1441 (1961)
+# 5d ions parameters from G Burns, J. Chem. Phys. v41, 1521 (1964) B,C only.
+
+
+
+
+#-------------------------------------------------------
+
+IONTYPE=Sc2+
+CHARGE=2
+nof_electrons=1
