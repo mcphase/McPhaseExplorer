@@ -23,7 +23,7 @@ nof_electrons=1
 CHARGE=+3
 conf=f1
 units=meV
-zeta=80.25496
+zeta=80.255
 #--------------------------------------------------------------------------
 # Crystal Field parameters in Stevens Notation (coordinate system xyz||abc)
 #--------------------------------------------------------------------------
@@ -53,7 +53,7 @@ R6=23.31
 #----------------
 # Lande factor gJ
 #----------------
-GJ=0.857143
+GJ=0.857142857
 
 #-------------------------------------------------------
 # Neutron Scattering Length (10^-12 cm) (can be complex)
