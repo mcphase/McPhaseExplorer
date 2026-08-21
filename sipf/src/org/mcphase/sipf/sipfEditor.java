@@ -299,7 +299,7 @@ public class sipfEditor extends VisualEditorBase {
 
         final String[] variables = {"N%d", "XI%d", "C%d"};
         final int columnCount = 4;
-        final String[] columns = {"", "N[p]", "XI[p]", "C[p]"};
+        final String[] columns = {"", "N[p]", "XI[p](1/a0)", "C[p]"};
 
         public int getParameterCount() {
             //Get the document text
